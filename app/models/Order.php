@@ -46,7 +46,7 @@ class Order extends AppModel
             ->subject('Ваш заказ на сайте Watchesshop')
             ->html($body);
 
-        $result = $mailer->send($email);
+        //$result = $mailer->send($email);
         unset($_SESSION['cart']);
         unset($_SESSION['cart.qty']);
         unset($_SESSION['cart.sum']);
